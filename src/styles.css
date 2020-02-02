@@ -1,0 +1,55 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.quiz-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.choices {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.choices.inactive {
+  pointer-events: none;
+}
+
+#correct.choices.inactive {
+  border: 1px solid green;
+}
+
+#incorrect.choices.inactive {
+  border: 1px solid red;
+  text-decoration: line-through;
+}
+
+.result {
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result.active {
+  display: block;
+}
+
+.next-button {
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.next-button.active {
+  display: inline-block;
+}
